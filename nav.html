@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Статья
+        </a>
+        <a href="works.html" style="display: block; margin-bottom: 20px;">
+            Наши работы
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Наши контакты
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Политика конфиденциальности
+        </a>
+        <a href="vacancies.html" style="display: block; margin-bottom: 20px;">
+            Вакансии
+        </a>
+        <a href="vacancy-item.html" style="display: block; margin-bottom: 20px;">
+            Страница вакансии
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            Услуги
+        </a>
+
+
+
+
+        <button data-modal="callModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            обратный звонок
+        </button>
+        <button data-modal="descModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Описание ИМ
+        </button>
+        <button data-modal="vacancyModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Хотите работать
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Спасибо!
+        </button>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="callModal">
+        <div class="container">
+            <div class="modal__top">
+                <a href="" class="modal__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <button class="modal__close _close-modal">
+                    <span class="comm">Закрыть</span>
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.7" clip-path="url(#clip0_10_1112)">
+                            <path d="M33 11L11 33" stroke="#0F1015" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11 11L33 33" stroke="#0F1015" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="modal-info">
+                <div class="h1">
+                    Оставьте заявку
+                    на <span>обратный звонок</span>
+                </div>
+                <div class="modal-info__desc">
+                    <div class="p gray-text">
+                        Оставьте свои контакты и наш менеджер вам перезвонит
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="phone-field _black">
+                    <fieldset class="fg ">
+                        <input type="tel">
+                    </fieldset>
+                    <div class="phone-field__toggle">
+                        <img src="img/rus.svg" alt="" class="phone-field__flag">
+                        <svg class="phone-field__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4.5L6 8.5L10 4.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="phone-field__dropdown">
+                        <div class="phone-field__items">
+                            <div class="phone-country _active" data-mask="+7 ddd ddd-dddd" data-mask-placeholder="+7">
+                                <img src="img/rus.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +7
+    </span>
+                                <span class="phone-field__country">
+        Россия
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+420 ddd ddd ddd" data-mask-placeholder="+420">
+                                <img src="img/czech.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +420
+    </span>
+                                <span class="phone-field__country">
+        Czech
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+971 ddd ddd-dddd" data-mask-placeholder="+971">
+                                <img src="img/UAE.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +971
+    </span>
+                                <span class="phone-field__country">
+        UAE
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+43 dddd dddddd" data-mask-placeholder="+43">
+                                <img src="img/Austria.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +43
+    </span>
+                                <span class="phone-field__country">
+        Austria
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+32 dddd dd dd dd" data-mask-placeholder="+32">
+                                <img src="img/Belgium.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +32
+    </span>
+                                <span class="phone-field__country">
+        Belgium
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+36 dd ddd dddd" data-mask-placeholder="+36">
+                                <img src="img/Hungary.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +36
+    </span>
+                                <span class="phone-field__country">
+        Hungary
+    </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset class="fg">
+                    <input type="text">
+                    <label>Email</label>
+                </fieldset>
+
+                <div class="modal-form__bottom _full">
+                    <button class="modal-form__btn m-btn m-btn-blue">
+                        <span>Оставить заявку</span>
+                        <img src="img/arrow-white.svg" alt="">
+                    </button>
+                    <div class="modal-form__hint">
+                        <div class="comm">
+                            Нажимая кнопку отправить вы соглашаетесь с политикой конфиденциальности.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="descModal">
+        <div class="container">
+            <div class="modal__top">
+                <a href="" class="modal__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <button class="modal__close _close-modal">
+                    <span class="comm">Закрыть</span>
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.7" clip-path="url(#clip0_10_1112)">
+                            <path d="M33 11L11 33" stroke="#0F1015" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11 11L33 33" stroke="#0F1015" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="modal-info">
+                <div class="h1">
+                    Получить описание <span>интернет-магазина</span>
+                </div>
+                <div class="modal-info__desc">
+                    <div class="p gray-text">
+                        Чтобы получить подробное описание комплекта интернет-магазина — оставьте свои контактные данные. Наш менеджер свяжется с вами для обсуждения проекта и подготовит детальную смету в 2-х вариантах
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="phone-field _black">
+                    <fieldset class="fg ">
+                        <input type="tel">
+                    </fieldset>
+                    <div class="phone-field__toggle">
+                        <img src="img/rus.svg" alt="" class="phone-field__flag">
+                        <svg class="phone-field__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4.5L6 8.5L10 4.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="phone-field__dropdown">
+                        <div class="phone-field__items">
+                            <div class="phone-country _active" data-mask="+7 ddd ddd-dddd" data-mask-placeholder="+7">
+                                <img src="img/rus.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +7
+    </span>
+                                <span class="phone-field__country">
+        Россия
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+420 ddd ddd ddd" data-mask-placeholder="+420">
+                                <img src="img/czech.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +420
+    </span>
+                                <span class="phone-field__country">
+        Czech
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+971 ddd ddd-dddd" data-mask-placeholder="+971">
+                                <img src="img/UAE.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +971
+    </span>
+                                <span class="phone-field__country">
+        UAE
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+43 dddd dddddd" data-mask-placeholder="+43">
+                                <img src="img/Austria.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +43
+    </span>
+                                <span class="phone-field__country">
+        Austria
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+32 dddd dd dd dd" data-mask-placeholder="+32">
+                                <img src="img/Belgium.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +32
+    </span>
+                                <span class="phone-field__country">
+        Belgium
+    </span>
+                            </div>
+
+                            <div class="phone-country " data-mask="+36 dd ddd dddd" data-mask-placeholder="+36">
+                                <img src="img/Hungary.svg" alt="" class="phone-field__flag">
+                                <span class="phone-field__code">
+        +36
+    </span>
+                                <span class="phone-field__country">
+        Hungary
+    </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset class="fg">
+                    <input type="text">
+                    <label>Email</label>
+                </fieldset>
+
+                <div class="modal-form__bottom _full">
+                    <button class="modal-form__btn m-btn m-btn-blue">
+                        <span>Получить КП</span>
+                        <img src="img/arrow-white.svg" alt="">
+                    </button>
+                    <div class="modal-form__hint">
+                        <div class="comm">
+                            Нажимая кнопку отправить вы соглашаетесь с политикой конфиденциальности.
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="modal-socials">
+                <div class="p gray-text">
+                    Или напишите нам в мессенджеры:
+                </div>
+                <div class="socials">
+                    <a href="" class="socials__item">
+                        <img src="img/WhatsApp.svg" alt="WhatsApp">
+                        <span class="p">WhatsApp</span>
+                    </a>
+                    <a href="" class="socials__item">
+                        <img src="img/Telegram.svg" alt="WhatsApp">
+                        <span class="p">Telegram</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal vacancy-modal" id="vacancyModal">
+        <div class="container">
+            <div class="modal__top">
+                <a href="" class="modal__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <button class="modal__close _close-modal">
+                    <span class="comm">Закрыть</span>
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.7" clip-path="url(#clip0_10_1112)">
+                            <path d="M33 11L11 33" stroke="#0F1015" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11 11L33 33" stroke="#0F1015" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="modal-info">
+                <div class="h1">
+                    Хотите работать в <span>Readycode</span>?
+                </div>
+                <div class="modal-info__desc">
+                    <div class="p gray-text">
+                        Если ты талантливый и хочешь работать в дружной команде — Пиши нам! Мы всегда в поиске крутых профессионалов
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <fieldset class="fg _static">
+                    <label>Привет, я</label>
+                    <input type="text" placeholder="Ваше имя *">
+                </fieldset>
+                <div class="phone-item">
+                    <div class="phone-item__title m-label">Мой телефон</div>
+                    <div class="phone-field _black">
+                        <fieldset class="fg _static">
+                            <input type="tel">
+                        </fieldset>
+                        <div class="phone-field__toggle">
+                            <img src="img/rus.svg" alt="" class="phone-field__flag">
+                            <svg class="phone-field__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 4.5L6 8.5L10 4.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="phone-field__dropdown">
+                            <div class="phone-field__items">
+                                <div class="phone-country _active" data-mask="+7 ddd ddd-dddd" data-mask-placeholder="+7">
+                                    <img src="img/rus.svg" alt="" class="phone-field__flag">
+                                    <span class="phone-field__code">
+        +7
+    </span>
+                                    <span class="phone-field__country">
+        Россия
+    </span>
+                                </div>
+
+                                <div class="phone-country " data-mask="+420 ddd ddd ddd" data-mask-placeholder="+420">
+                                    <img src="img/czech.svg" alt="" class="phone-field__flag">
+                                    <span class="phone-field__code">
+        +420
+    </span>
+                                    <span class="phone-field__country">
+        Czech
+    </span>
+                                </div>
+
+                                <div class="phone-country " data-mask="+971 ddd ddd-dddd" data-mask-placeholder="+971">
+                                    <img src="img/UAE.svg" alt="" class="phone-field__flag">
+                                    <span class="phone-field__code">
+        +971
+    </span>
+                                    <span class="phone-field__country">
+        UAE
+    </span>
+                                </div>
+
+                                <div class="phone-country " data-mask="+43 dddd dddddd" data-mask-placeholder="+43">
+                                    <img src="img/Austria.svg" alt="" class="phone-field__flag">
+                                    <span class="phone-field__code">
+        +43
+    </span>
+                                    <span class="phone-field__country">
+        Austria
+    </span>
+                                </div>
+
+                                <div class="phone-country " data-mask="+32 dddd dd dd dd" data-mask-placeholder="+32">
+                                    <img src="img/Belgium.svg" alt="" class="phone-field__flag">
+                                    <span class="phone-field__code">
+        +32
+    </span>
+                                    <span class="phone-field__country">
+        Belgium
+    </span>
+                                </div>
+
+                                <div class="phone-country " data-mask="+36 dd ddd dddd" data-mask-placeholder="+36">
+                                    <img src="img/Hungary.svg" alt="" class="phone-field__flag">
+                                    <span class="phone-field__code">
+        +36
+    </span>
+                                    <span class="phone-field__country">
+        Hungary
+    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <fieldset class="fg _static">
+                    <label>Мой email</label>
+                    <input type="email" placeholder="Email">
+                </fieldset>
+
+                <fieldset class="fg _full2 _static">
+                    <label>Мои навыки</label>
+                    <textarea placeholder="Кратко о ваших навыках"></textarea>
+                </fieldset>
+
+                <div class="contacts-form__files m-files _full">
+                    <div class="m-files__title">
+                        Моё резюме
+                    </div>
+                    <div class="file-input ">
+                        <div class="file-input__wrap">
+                            <div class="custom-file-container" data-upload-id="file-input"></div>
+                            <div class="file-input__inner">
+                                <div class="file-input__btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.9999 6.99996L8.49995 13.5C8.10212 13.8978 7.87863 14.4374 7.87863 15C7.87863 15.5626 8.10212 16.1021 8.49995 16.5C8.89777 16.8978 9.43734 17.1213 9.99995 17.1213C10.5626 17.1213 11.1021 16.8978 11.4999 16.5L17.9999 9.99996C18.7956 9.20432 19.2426 8.12518 19.2426 6.99996C19.2426 5.87475 18.7956 4.79561 17.9999 3.99996C17.2043 3.20432 16.1252 2.75732 14.9999 2.75732C13.8747 2.75732 12.7956 3.20432 11.9999 3.99996L5.49995 10.5C4.30647 11.6934 3.63599 13.3121 3.63599 15C3.63599 16.6878 4.30647 18.3065 5.49995 19.5C6.69342 20.6934 8.31212 21.3639 9.99995 21.3639C11.6878 21.3639 13.3065 20.6934 14.4999 19.5L20.9999 13" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="file-input__title">
+                                    Прикрепить техническое задание
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-form__bottom _full">
+                    <button class="modal-form__btn m-btn m-btn-blue">
+                        <span>Оставить заявку</span>
+                        <img src="img/arrow-white.svg" alt="">
+                    </button>
+                    <div class="modal-form__hint">
+                        <div class="comm">
+                            Нажимая кнопку отправить вы соглашаетесь с политикой конфиденциальности.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="thankModal">
+        <div class="container">
+            <div class="modal__top">
+                <a href="" class="modal__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <button class="modal__close _close-modal">
+                    <span class="comm">Закрыть</span>
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.7" clip-path="url(#clip0_10_1112)">
+                            <path d="M33 11L11 33" stroke="#0F1015" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11 11L33 33" stroke="#0F1015" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="modal-thank">
+                <img src="img/check2.svg" alt="" class="modal-thank__icon">
+                <div class="modal-info">
+                    <div class="h1">
+                        Спасибо!
+                    </div>
+                    <div class="modal-info__desc">
+                        <div class="p gray-text">
+                            Заявка успешно отправлена. Мы свяжемся с вами в ближайшее время по указанным контактам.
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-thank__nav">
+                    <button class="modal-form__btn _close-modal m-btn m-btn-blue">
+                        <span>Вернуться на сайт</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
