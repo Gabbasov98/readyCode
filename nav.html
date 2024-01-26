@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="preload" as="font" href="fonts/Geologica-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Geologica-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Light.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Bold.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-ExtraBold.woff2">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
 </head>
+<style>
+
+</style>
+
 
 
 <style>
@@ -27,7 +38,7 @@
 
 <body class="m-page">
 
-    <div class="wrapper" style="padding: 50px;">
+    <div class="wrapper" id="butter" style="padding: 50px;">
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
@@ -204,10 +215,11 @@
                     <button class="modal-form__btn m-btn m-btn-blue">
                         <span>Оставить заявку</span>
                         <img src="img/arrow-white.svg" alt="">
+                        <span class="_animate-span"></span>
                     </button>
                     <div class="modal-form__hint">
                         <div class="comm">
-                            Нажимая кнопку отправить вы соглашаетесь с политикой конфиденциальности.
+                            Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой конфиденциальности</a> .
                         </div>
                     </div>
                 </div>
@@ -330,10 +342,11 @@
                     <button class="modal-form__btn m-btn m-btn-blue">
                         <span>Получить КП</span>
                         <img src="img/arrow-white.svg" alt="">
+                        <span class="_animate-span"></span>
                     </button>
                     <div class="modal-form__hint">
                         <div class="comm">
-                            Нажимая кнопку отправить вы соглашаетесь с политикой конфиденциальности.
+                            Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой конфиденциальности</a> .
                         </div>
                     </div>
                 </div>
@@ -507,10 +520,11 @@
                     <button class="modal-form__btn m-btn m-btn-blue">
                         <span>Оставить заявку</span>
                         <img src="img/arrow-white.svg" alt="">
+                        <span class="_animate-span"></span>
                     </button>
                     <div class="modal-form__hint">
                         <div class="comm">
-                            Нажимая кнопку отправить вы соглашаетесь с политикой конфиденциальности.
+                            Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой конфиденциальности</a> .
                         </div>
                     </div>
                 </div>
@@ -551,6 +565,7 @@
                 <div class="modal-thank__nav">
                     <button class="modal-form__btn _close-modal m-btn m-btn-blue">
                         <span>Вернуться на сайт</span>
+                        <span class="_animate-span"></span>
                     </button>
                 </div>
             </div>
@@ -562,6 +577,7 @@
     <!-- <div class="modal-backdrop show"></div> -->
 
     <!--  -->
+    <script src="js/butter.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 

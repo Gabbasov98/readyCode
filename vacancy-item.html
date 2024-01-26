@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="preload" as="font" href="fonts/Geologica-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Geologica-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Light.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Bold.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-ExtraBold.woff2">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Вакансии</title>
 </head>
+<style>
+
+</style>
+
 
 <body class="m-page">
-    <div class="wrapper">
+    <div class="wrapper" id="butter">
         <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -88,6 +99,7 @@
                             <button class="header-action__btn m-btn _small m-btn-blue">
                                 <span>Заказать звонок</span>
                                 <img src="img/arrow-white.svg" alt="">
+                                <span class="_animate-span"></span>
                             </button>
                             <button class="burger _toggle-menu">
                                 <img class="_view1" src="img/burger.svg" alt="">
@@ -209,7 +221,7 @@
 
             <div class="vacancies-page page-block page-bg">
                 <div class="container">
-                    <div class="h1">
+                    <div class="h1 _animate-block">
                         Менеджер по продажам (B2B)
                     </div>
 
@@ -271,13 +283,14 @@
                                         <path d="M9.25231 1.7478L1.55396 9.44615" stroke="#1D4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M1.53931 1.69238L9.25223 1.74676L9.30772 9.46079" stroke="#1D4ED8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
+                                    <span class="_animate-span"></span>
                                 </a>
                             </div>
                         </div>
                         <div class="vacancies-page__sidebar">
                             <div class="vacancy-sidebar">
                                 <div class="vacancy-sidebar__info">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         Откликнуться на вакансию
                                     </div>
                                     <div class="p gray-text">
@@ -288,6 +301,7 @@
                                     <button class="vacancy-sidebar__btn m-btn m-btn-blue">
                                         <span>Написать</span>
                                         <img src="img/arrow-white.svg" alt="">
+                                        <span class="_animate-span"></span>
                                     </button>
                                     <div class="socials">
                                         <a href="" class="socials__item">
@@ -356,7 +370,7 @@
                                 </div>
                                 <div class="footer-contacts__content">
                                     <div class="h5">
-                                        <a href="">+7 499 348 99 77</a>
+                                        <a class="footer-contacts__phone" href="">+7 499 348 99 77</a>
                                     </div>
                                 </div>
                             </div>
@@ -487,6 +501,7 @@
         </footer>
     </div>
 
+    <script src="js/butter.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 

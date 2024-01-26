@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="preload" as="font" href="fonts/Geologica-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Geologica-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Light.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Bold.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-ExtraBold.woff2">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Блог компании</title>
 </head>
+<style>
+
+</style>
+
 
 <body class="m-page">
-    <div class="wrapper">
+    <div class="wrapper" id="butter">
         <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -88,6 +99,7 @@
                             <button class="header-action__btn m-btn _small m-btn-blue">
                                 <span>Заказать звонок</span>
                                 <img src="img/arrow-white.svg" alt="">
+                                <span class="_animate-span"></span>
                             </button>
                             <button class="burger _toggle-menu">
                                 <img class="_view1" src="img/burger.svg" alt="">
@@ -210,7 +222,7 @@
             <div class="blog-item">
                 <div class="container">
                     <div class="blog-item__top">
-                        <h1 class="h2">
+                        <h1 class="h2 _animate-block">
                             Все о WooCommerce: функционал, преимущества и недостатки сервиса
                         </h1>
                         <div class="blog-item__nav">
@@ -295,7 +307,7 @@
             <div class="blog">
                 <div class="container">
                     <div class="blog__top">
-                        <div class="h3">
+                        <div class="h3 _animate-block">
                             Похожие публикации
                         </div>
                     </div>
@@ -313,7 +325,7 @@
                                                 <div class="p gray-text">
                                                     E-commerce
                                                 </div>
-                                                <div class="h5">
+                                                <div class="h5 _animate-block">
                                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                                 </div>
                                                 <div class="comm gray-text">
@@ -332,7 +344,7 @@
                                                 <div class="p gray-text">
                                                     E-commerce, Гайды
                                                 </div>
-                                                <div class="h5">
+                                                <div class="h5 _animate-block">
                                                     <a href="">Как подключить и принимать оплату через POS-терминал</a>
                                                 </div>
                                                 <div class="comm gray-text">
@@ -351,7 +363,7 @@
                                                 <div class="p gray-text">
                                                     E-commerce, Гайды
                                                 </div>
-                                                <div class="h5">
+                                                <div class="h5 _animate-block">
                                                     <a href="">Как подключить и принимать оплату через POS-терминал</a>
                                                 </div>
                                                 <div class="comm gray-text">
@@ -370,7 +382,7 @@
                                                 <div class="p gray-text">
                                                     E-commerce
                                                 </div>
-                                                <div class="h5">
+                                                <div class="h5 _animate-block">
                                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                                 </div>
                                                 <div class="comm gray-text">
@@ -384,17 +396,19 @@
                             </div>
                         </div>
                         <div class="swiper-nav">
-                            <div class="swiper-button swiper-button-prev">
+                            <div class="swiper-button swiper-button-prev m-btn">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.10394 7.07135L14.2007 7.07134" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M8.12024 0.967773L2.10312 7.07034L8.12024 13.1747" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
+                                <span class="_animate-span"></span>
                             </div>
-                            <div class="swiper-button swiper-button-next">
+                            <div class="swiper-button swiper-button-next m-btn">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.8961 7.07135L1.79927 7.07134" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M7.87976 0.967773L13.8969 7.07034L7.87976 13.1747" stroke="#0F1015" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
+                                <span class="_animate-span"></span>
                             </div>
                         </div>
 
@@ -452,7 +466,7 @@
                                 </div>
                                 <div class="footer-contacts__content">
                                     <div class="h5">
-                                        <a href="">+7 499 348 99 77</a>
+                                        <a class="footer-contacts__phone" href="">+7 499 348 99 77</a>
                                     </div>
                                 </div>
                             </div>
@@ -583,6 +597,7 @@
         </footer>
     </div>
 
+    <script src="js/butter.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 

@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="preload" as="font" href="fonts/Geologica-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Geologica-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Light.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Bold.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-ExtraBold.woff2">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Вакансии</title>
 </head>
+<style>
+
+</style>
+
 
 <body class="m-page">
-    <div class="wrapper">
+    <div class="wrapper" id="butter">
         <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -88,6 +99,7 @@
                             <button class="header-action__btn m-btn _small m-btn-blue">
                                 <span>Заказать звонок</span>
                                 <img src="img/arrow-white.svg" alt="">
+                                <span class="_animate-span"></span>
                             </button>
                             <button class="burger _toggle-menu">
                                 <img class="_view1" src="img/burger.svg" alt="">
@@ -208,7 +220,7 @@
 
             <div class="vacancies-page page-block page-bg">
                 <div class="container">
-                    <div class="h1">
+                    <div class="h1 _animate-block">
                         Вакансии
                     </div>
 
@@ -231,7 +243,7 @@
                         <div class="vacancies-page__content">
                             <div class="vacancies-page__items">
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">Менеджер по продажам (B2B)</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -262,7 +274,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">ЛИД-менеджер/Ассистент по продажам</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -293,7 +305,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">Project manager</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -324,7 +336,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">Менеджер по продажам (B2B)</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -355,7 +367,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">Менеджер по продажам (B2B)</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -386,7 +398,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">Специалист по платному трафику / PPC-специалист</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -417,7 +429,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">ЛИД-менеджер/Ассистент по продажам</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -448,7 +460,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">Project manager</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -479,7 +491,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">Специалист по платному трафику / PPC-специалист</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -510,7 +522,7 @@
                                 </div>
 
                                 <div class="vacancy-card">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         <a href="">Менеджер по продажам (B2B)</a>
                                     </div>
                                     <div class="h6 gray-text">
@@ -575,7 +587,7 @@
                                     <img src="img/question.svg" alt="">
                                 </div>
                                 <div class="vacancy-sidebar__info">
-                                    <div class="h4">
+                                    <div class="h4 _animate-block">
                                         Не нашли нужную вакансию?
                                     </div>
                                     <div class="p gray-text">
@@ -586,6 +598,7 @@
                                     <button class="vacancy-sidebar__btn m-btn m-btn-blue">
                                         <span>Написать</span>
                                         <img src="img/arrow-white.svg" alt="">
+                                        <span class="_animate-span"></span>
                                     </button>
                                     <div class="socials">
                                         <a href="" class="socials__item">
@@ -654,7 +667,7 @@
                                 </div>
                                 <div class="footer-contacts__content">
                                     <div class="h5">
-                                        <a href="">+7 499 348 99 77</a>
+                                        <a class="footer-contacts__phone" href="">+7 499 348 99 77</a>
                                     </div>
                                 </div>
                             </div>
@@ -785,6 +798,7 @@
         </footer>
     </div>
 
+    <script src="js/butter.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 

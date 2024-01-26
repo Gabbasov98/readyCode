@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="preload" as="font" href="fonts/Geologica-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Geologica-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Light.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Bold.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-ExtraBold.woff2">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Политика конфиденциальности</title>
 </head>
+<style>
+
+</style>
+
 
 <body class="m-page">
-    <div class="wrapper">
+    <div class="wrapper" id="butter">
         <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -88,6 +99,7 @@
                             <button class="header-action__btn m-btn _small m-btn-blue">
                                 <span>Заказать звонок</span>
                                 <img src="img/arrow-white.svg" alt="">
+                                <span class="_animate-span"></span>
                             </button>
                             <button class="burger _toggle-menu">
                                 <img class="_view1" src="img/burger.svg" alt="">
@@ -209,7 +221,7 @@
             <div class="conf-page page-block">
                 <div class="container">
                     <div class="conf-page__top">
-                        <div class="h1">
+                        <div class="h1 _animate-block">
                             Политика конфиденциальности
                         </div>
                     </div>
@@ -391,7 +403,7 @@
                                 </div>
                                 <div class="footer-contacts__content">
                                     <div class="h5">
-                                        <a href="">+7 499 348 99 77</a>
+                                        <a class="footer-contacts__phone" href="">+7 499 348 99 77</a>
                                     </div>
                                 </div>
                             </div>
@@ -522,6 +534,7 @@
         </footer>
     </div>
 
+    <script src="js/butter.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 

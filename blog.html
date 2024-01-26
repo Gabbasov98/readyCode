@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="preload" as="font" href="fonts/Geologica-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Geologica-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Light.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Regular.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Medium.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-Bold.woff2">
+    <link rel="preload" as="font" href="fonts/Onest-ExtraBold.woff2">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Блог компании</title>
 </head>
+<style>
+
+</style>
+
 
 <body class="m-page">
-    <div class="wrapper">
+    <div class="wrapper" id="butter">
         <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -88,6 +99,7 @@
                             <button class="header-action__btn m-btn _small m-btn-blue">
                                 <span>Заказать звонок</span>
                                 <img src="img/arrow-white.svg" alt="">
+                                <span class="_animate-span"></span>
                             </button>
                             <button class="burger _toggle-menu">
                                 <img class="_view1" src="img/burger.svg" alt="">
@@ -209,7 +221,7 @@
             <div class="blog-page page-block">
                 <div class="container">
                     <div class="info-block">
-                        <div class="h1">
+                        <div class="h1 _animate-block">
                             Блог о e-commerce и не только
                         </div>
                         <div class="p gray-text">
@@ -242,7 +254,7 @@
                                 <div class="p gray-text">
                                     E-commerce, Гайды
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">Как подключить и принимать оплату через POS-терминал</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -259,7 +271,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -276,7 +288,7 @@
                                 <div class="p gray-text">
                                     E-commerce, Обзоры
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">Всё о WooCommerce: функционал, преимущества и недостатки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -293,7 +305,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -310,7 +322,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -327,7 +339,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП бесплатных и платных SEO сервисов для поисковой оптимизации</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -344,7 +356,7 @@
                                 <div class="p gray-text">
                                     E-commerce, Гайды
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">Как подключить и принимать оплату через POS-терминал</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -361,7 +373,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП бесплатных и платных SEO сервисов для поисковой оптимизации</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -378,7 +390,7 @@
                                 <div class="p gray-text">
                                     E-commerce, Обзоры
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">Всё о WooCommerce: функционал, преимущества и недостатки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -395,7 +407,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -412,7 +424,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -429,7 +441,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -446,7 +458,7 @@
                                 <div class="p gray-text">
                                     E-commerce, Гайды
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">Как подключить и принимать оплату через POS-терминал</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -463,7 +475,7 @@
                                 <div class="p gray-text">
                                     E-commerce
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">ТОП-10 российских и зарубежных программ для email-рассылки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -480,7 +492,7 @@
                                 <div class="p gray-text">
                                     E-commerce, Обзоры
                                 </div>
-                                <div class="h5">
+                                <div class="h5 _animate-block">
                                     <a href="">Всё о WooCommerce: функционал, преимущества и недостатки</a>
                                 </div>
                                 <div class="comm gray-text">
@@ -579,7 +591,7 @@
                                 </div>
                                 <div class="footer-contacts__content">
                                     <div class="h5">
-                                        <a href="">+7 499 348 99 77</a>
+                                        <a class="footer-contacts__phone" href="">+7 499 348 99 77</a>
                                     </div>
                                 </div>
                             </div>
@@ -710,6 +722,7 @@
         </footer>
     </div>
 
+    <script src="js/butter.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 
